@@ -52,7 +52,7 @@
                         <!-- Single item -->
                         <div class="carousel-item active">
                             <img src="https://awsimages.detik.net.id/community/media/visual/2022/11/20/rijsttafel-indonesia-2.jpeg?w=1200" class="d-block w-100"
-                                alt="Image 1" height="250px" style="over" />
+                                alt="Image 1" height="250px"/>
                             <div class="carousel-caption d-none d-md-block" style="opacity: 0.8; background-color: #333333">
                                 <div style="font-size: 24px">KUL<span class="color-2" style="font-size: 24px">TARA</span></div>
                                 <div style="font-size: 24px">IS</div>
@@ -63,8 +63,8 @@
                         <!-- Single item -->
                         <div class="carousel-item">
                             <img src="https://e1.pxfuel.com/desktop-wallpaper/758/101/desktop-wallpaper-medicadventurer%E2%84%A2-on-wonderful-indonesia-wonderful-indonesia.jpg" class="d-block w-100"
-                                alt="Image 2" height="250px" style="over" />
-                            <div class="carousel-caption d-none d-md-block">
+                                alt="Image 2" height="250px"/>
+                            <div class="carousel-caption d-none d-md-block" style="opacity: 0.8; background-color: #333333">
                                 <p style="font-size: 24px"><span class="color-2" style="font-size: 24px">Information On</span> Typical Food Throughout <span class="color-2" style="font-size: 24px">Indonesia</span></p>
                             </div>
                         </div>
@@ -124,7 +124,7 @@
                                     <h5 class="card-title">
                                         <a href="{{ url('menu') }}/{{ $item->slug }}" class="color-2">{{ $item->nama }} </a>
                                     </h5>
-                                    <div class="card-text text-muted">
+                                    <div class="card-text text-muted mb-2">
                                         {{ substr($item->keterangan_masakan, 0, 80) }}
                                         <a href="{{ url('menu') }}/{{ $item->slug }}">Read More</a>
                                     </div>
