@@ -58,7 +58,7 @@
                             <div class="text-muted mb-3" style="font-style: italic">Sumber: wikipedia</div>
                             <h5 class="card-title">${title}</h5>
                             <p class="text-muted">${extract}</p>
-                            <a href="https://id.wikipedia.org/wiki/Rendang" target="_blank">Lihat Selengkapnya</a>
+                            <a href="https://id.wikipedia.org/wiki/${title}" target="_blank">Lihat Selengkapnya</a>
                             <br>
                         `;
                     } else {
@@ -66,7 +66,7 @@
                             <div class="text-muted mb-3" style="font-style: italic">Sumber: wikipedia</div>
                             <h5 class="card-title">{{ $food->name }}</h5>
                             <p class="text-muted">{{ $food->keterangan_masakan }}</p>
-                            <a href="https://id.wikipedia.org/wiki/Rendang" target="_blank">Lihat Selengkapnya</a>
+                            <a href="https://id.wikipedia.org/wiki/{{ $food->name }}" target="_blank">Lihat Selengkapnya</a>
                             <br>
                         `;
                     }
