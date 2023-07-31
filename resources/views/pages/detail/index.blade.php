@@ -46,20 +46,30 @@
                     // Get the page ID from the response (assuming there is only one page returned)
                     const pageId = Object.keys(data.query.pages)[0];
 
-                    // Extract the page information
-                    const page = data.query.pages[pageId];
-                    const title = page.title;
-                    const extract = page.extract;
+                    if (pageId != -1) {
+                        // Extract the page information
+                        const page = data.query.pages[pageId];
+                        const title = page.title;
+                        const extract = page.extract;
 
-                    // Display the result on the webpage
+                        // Display the result on the webpage
 
-                    resultElement.innerHTML = `
-                    <div class="text-muted mb-3" style="font-style: italic">Sumber: wikipedia</div>
-                    <h5 class="card-title">${title}</h5>
-                    <p class="text-muted">${extract}</p>
-                    <a href="https://id.wikipedia.org/wiki/Rendang" target="_blank">Lihat Selengkapnya</a>
-                    <br>
-                `;
+                        resultElement.innerHTML = `
+                            <div class="text-muted mb-3" style="font-style: italic">Sumber: wikipedia</div>
+                            <h5 class="card-title">${title}</h5>
+                            <p class="text-muted">${extract}</p>
+                            <a href="https://id.wikipedia.org/wiki/Rendang" target="_blank">Lihat Selengkapnya</a>
+                            <br>
+                        `;
+                    } else {
+                        resultElement.innerHTML = `
+                            <div class="text-muted mb-3" style="font-style: italic">Sumber: wikipedia</div>
+                            <h5 class="card-title">{{ $food->name }}</h5>
+                            <p class="text-muted">{{ $food->keterangan_masakan }}</p>
+                            <a href="https://id.wikipedia.org/wiki/Rendang" target="_blank">Lihat Selengkapnya</a>
+                            <br>
+                        `;
+                    }
                 })
                 .catch((error) => {
                     console.error('Error fetching data:', error);
