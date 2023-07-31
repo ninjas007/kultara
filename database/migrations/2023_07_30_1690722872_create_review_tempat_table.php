@@ -10,13 +10,12 @@ class CreateReviewTempatTable extends Migration
     {
         Schema::create('review_tempat', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('masakan_id',);
-            $table->string('alamat', 255);
+            $table->integer('tempat_id');
             $table->string('nama_reviewer', 255);
             $table->string('email_reviewer', 255);
             $table->integer('rating');
             $table->text('comment');
-            $table->string('no_wa');
+            $table->timestamps();
         });
     }
 

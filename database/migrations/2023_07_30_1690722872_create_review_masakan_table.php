@@ -15,6 +15,7 @@ class CreateReviewMasakanTable extends Migration
             $table->string('email_reviewer', 255);
             $table->integer('rating');
             $table->text('comment');
+            $table->timestamps();
         });
     }
 
