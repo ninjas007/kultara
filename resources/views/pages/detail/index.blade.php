@@ -63,10 +63,8 @@
                         `;
                     } else {
                         resultElement.innerHTML = `
-                            <div class="text-muted mb-3" style="font-style: italic">Sumber: wikipedia</div>
                             <h5 class="card-title">{{ $food->nama }}</h5>
                             <p class="text-muted">{{ $food->keterangan_masakan }}</p>
-                            <a href="https://id.wikipedia.org/wiki/{{ $food->name }}" target="_blank">Lihat Selengkapnya</a>
                             <br>
                         `;
                     }
