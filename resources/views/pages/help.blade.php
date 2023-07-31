@@ -31,7 +31,7 @@
                     </div>
 
                     <!-- Submit button -->
-                    <button type="button" id="send" class="btn form-control mb-4" style="background-color: #68c83e !important; color: white; font-size: 14px">Send</button>
+                    <button type="button" id="send" class="btn form-control mb-4" style="background-color: #68c83e !important; color: white; font-size: 14px">Send Message</button>
                 </form>
             </div>
         </div>

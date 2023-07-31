@@ -15,7 +15,7 @@
                 <p class="p-5" style="font-style: italic">
                     KULTARA atau singkatan dari Kuliner Nusantara merupakan aplikasi yang bertujuan untuk memberikan informasi tentang makanan atau minuman nusantara. Di aplikasi ini juga bisa melihat resep, review dan lokasi yang dibagikan oleh publik.
                 </p>
-                <div>Developer By <a href="http://github.com/ninjas007">Tilis Tiadi</a></div>
+                <div>Developed By <a href="http://github.com/ninjas007">Tilis Tiadi</a></div>
             </div>
         </div>
     </div>
