@@ -2,7 +2,7 @@
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <form action="{{ url('recipes/save') }}" method="POST">
             @csrf
-            <input type="hidden" name="masakan_id" value="1">
+            <input type="hidden" name="masakan_id" value="{{ $food->id }}">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="addResepLabel">Add Recipe</h5>
@@ -25,7 +25,7 @@
                         <div class="col-md-12 form-group mb-3">
                             <label for="nama_masakan" class="mb-2">Food Name</label>
                             <input type="text" class="form-control" name="nama_masakan" id="nama_masakan"
-                                placeholder="ex: Fried Chicken">
+                                placeholder="ex: Fried Chicken with Sambal Balado">
                         </div>
                         <div class="col-md-12 form-group mb-3">
                             <label for="deskripsi" class="mb-2">Description</label>

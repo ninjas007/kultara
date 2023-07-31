@@ -181,3 +181,7 @@ a {
 .title:hover {
     cursor: pointer;
 }
+
+.carousel-item {
+    font-family:'Courier New', Courier, monospace !important;
+}

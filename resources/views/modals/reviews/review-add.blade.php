@@ -4,7 +4,7 @@
             @csrf
             <div class="modal-content">
                 <input type="hidden" id="ratingValue" name="rating" value="0">
-                <input type="hidden" id="masakanId" name="masakan_id" value="1">
+                <input type="hidden" id="masakanId" name="masakan_id" value="{{ $food->id }}">
                 <div class="modal-header">
                     <h5 class="modal-title" id="addReviewLabel">Add Review</h5>
                     <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>

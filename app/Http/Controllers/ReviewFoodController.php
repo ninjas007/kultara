@@ -10,7 +10,7 @@ class ReviewFoodController extends Controller
 {
     public function get(Request $request)
     {
-        $reviews = ReviewFood::get();
+        $reviews = ReviewFood::where('masakan_id', $request->food_id)->get();
 
         $view_reviews = view('contents.list-review', [
             'reviews' => $reviews

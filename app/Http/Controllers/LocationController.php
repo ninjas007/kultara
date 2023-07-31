@@ -11,7 +11,7 @@ class LocationController extends Controller
 {
     public function get(Request $request)
     {
-        $locations = Location::with('reviews')->get();
+        $locations = Location::where('masakan_id', $request->food_id)->with('reviews')->get();
 
         $view_locations = view('contents.list-location', [
             'locations' => $locations

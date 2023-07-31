@@ -12,8 +12,11 @@ class CreateMasakanTable extends Migration
             $table->bigIncrements('id');
             $table->string('url_gambar')->nullable();
             $table->string('nama', 255);
+            $table->string('slug', 255);
             $table->text('keterangan_masakan');
             $table->integer('jenis');
+            $table->string('email_by', 255)->nullable();
+            $table->timestamps();
         });
     }
 

@@ -10,7 +10,7 @@ class RecipeController extends Controller
 {
     public function get(Request $request)
     {
-        $recipes = Recipe::get();
+        $recipes = Recipe::where('masakan_id', $request->food_id)->get();
 
         $view_recipe = view('contents.list-recipe', [
             'recipes' => $recipes

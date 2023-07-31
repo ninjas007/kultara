@@ -23,8 +23,7 @@
     <div class="body-content p-2 bg-white">
         <div class="row">
             <div class="col-12">
-                <img src="https://cdn0-production-images-kly.akamaized.net/k-8T2_IXluILxIDDBwJvGuzAtkE=/0x120:3000x1811/1200x675/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3282059/original/075075700_1604028408-shutterstock_1788721670.jpg"
-                    class="img-fluid" alt="gambar makanan">
+               @include('image-food')
             </div>
         </div>
         <div class="row" style="margin-bottom: 80px">
@@ -58,10 +57,13 @@
 
 @include('js.review')
 <script type="text/javascript">
+    const food_id = `{{ $food->id }}`;
+
     function loadLocations() {
         $.ajax({
             url: `{{ url('location') }}`,
             dataType: 'JSON',
+            data: {food_id},
             beforeSend: function(){
                 $('#result').text('Loading...')
             },
