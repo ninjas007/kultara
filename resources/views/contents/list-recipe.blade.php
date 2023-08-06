@@ -1,7 +1,7 @@
 @forelse ($recipes as $recipe)
     <div class="card card-resep mb-2 fade-in">
         <div class="card-body">
-            <div class="card-title title mb-2 h5 text-info" data-mdb-toggle="modal" data-mdb-target="#detailResep">
+            <div class="card-title title mb-2 h5 text-info" onclick="detailResep(`{{ $recipe->id }}`)">
                 {{ $recipe->nama_masakan }}
             </div>
             <p class="card-text text-muted">{{ substr($recipe->deskripsi, 0, 200) }} <a href="javascript:void" onclick="detailResep(`{{ $recipe->id }}`)">Read More</a></p>

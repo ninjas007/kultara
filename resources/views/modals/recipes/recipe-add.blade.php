@@ -13,31 +13,31 @@
                         <div class="col-md-6 form-group mb-3">
                             <label for="created_by" class="mb-2">Post by</label>
                             <input type="text" class="form-control" name="created_by" id="created_by"
-                                placeholder="ex: Alex">
+                                placeholder="ex: Alex" required>
                         </div>
                         <div class="col-md-6 form-group mb-3">
                             <label for="email_by" class="mb-2">Email by</label>
                             <input type="text" class="form-control" name="email_by" id="email_by"
-                                placeholder="ex: alex@mail.com">
+                                placeholder="ex: alex@mail.com" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12 form-group mb-3">
                             <label for="nama_masakan" class="mb-2">Food Name</label>
                             <input type="text" class="form-control" name="nama_masakan" id="nama_masakan"
-                                placeholder="ex: Fried Chicken with Sambal Balado">
+                                placeholder="ex: Fried Chicken with Sambal Balado" required>
                         </div>
                         <div class="col-md-12 form-group mb-3">
                             <label for="deskripsi" class="mb-2">Description</label>
-                            <textarea name="deskripsi" id="deskripsi" cols="30" rows="5" class="form-control"></textarea>
+                            <textarea name="deskripsi" id="deskripsi" cols="30" rows="5" class="form-control" required></textarea>
                         </div>
                         <div class="col-md-12 form-group mb-3">
                             <label for="alat_dan_bahan" class="mb-2">Ingredients</label>
-                            <textarea name="alat_dan_bahan" id="alat_dan_bahan" cols="30" rows="3" class="form-control tiny"></textarea>
+                            <textarea name="alat_dan_bahan" id="alat_dan_bahan" cols="30" rows="3" class="form-control tiny" required></textarea>
                         </div>
                         <div class="col-md-12 form-group mb-3">
                             <label for="cara_memasak" class="mb-2">Cooking step</label>
-                            <textarea name="cara_memasak" id="cara_memasak" cols="30" rows="3" class="form-control tiny"></textarea>
+                            <textarea name="cara_memasak" id="cara_memasak" cols="30" rows="3" class="form-control tiny" required></textarea>
                         </div>
                     </div>
                 </div>
