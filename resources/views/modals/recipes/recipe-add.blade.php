@@ -33,11 +33,11 @@
                         </div>
                         <div class="col-md-12 form-group mb-3">
                             <label for="alat_dan_bahan" class="mb-2">Ingredients</label>
-                            <textarea name="alat_dan_bahan" id="alat_dan_bahan" cols="30" rows="3" class="form-control tiny" required></textarea>
+                            <textarea name="alat_dan_bahan" id="alat_dan_bahan" cols="30" rows="3" class="form-control tiny"></textarea>
                         </div>
                         <div class="col-md-12 form-group mb-3">
                             <label for="cara_memasak" class="mb-2">Cooking step</label>
-                            <textarea name="cara_memasak" id="cara_memasak" cols="30" rows="3" class="form-control tiny" required></textarea>
+                            <textarea name="cara_memasak" id="cara_memasak" cols="30" rows="3" class="form-control tiny"></textarea>
                         </div>
                     </div>
                 </div>

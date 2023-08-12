@@ -41,8 +41,8 @@ class RecipeController extends Controller
             $resep->nama_masakan = $request->nama_masakan;
             $resep->masakan_id = $request->masakan_id;
             $resep->deskripsi = $request->deskripsi;
-            $resep->alat_dan_bahan = json_encode($request->alat_dan_bahan);
-            $resep->cara_memasak = json_encode($request->cara_memasak);
+            $resep->alat_dan_bahan = $request->alat_dan_bahan ? json_encode($request->alat_dan_bahan) : '';
+            $resep->cara_memasak = $request->cara_memasak ? json_encode($request->cara_memasak) : '';
             $resep->email_by = $request->email_by;
             $resep->created_by = $request->created_by;
 
